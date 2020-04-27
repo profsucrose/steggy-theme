@@ -1,21 +1,6 @@
-# Cat Customs - Custom Editor API Samples
+# Steggy Theme
+VS Code support for .stegg files to make SteggDev a breeze!
 
-Demonstrates using VS Code's [custom editor API](https://code.visualstudio.com/api/extension-guides/custom-editors):
+See Stegglang documentation and extension installation here: https://github.com/profsucrose/stegglang
 
-- Cat Scratch — A text based custom editor for `.cscratch` files (which are just json files)
-
-## VS Code API
-
-### `vscode` module
-
-- [`window.registerCustomEditorProvider`](https://code.visualstudio.com/api/references/vscode-api#window.registerCustomEditorProvider)
-- [`CustomTextEditor`](https://code.visualstudio.com/api/references/vscode-api#CustomTextEditor)
-
-## Running the example
-
-- Open this example in VS Code 1.44+
-- `npm install`
-- `npm run watch` or `npm run compile`
-- `F5` to start debugging
-
-Open the example files from the `exampleFiles` directory.
+See source code for this editor here: https://github.com/profsucrose/steggy-theme

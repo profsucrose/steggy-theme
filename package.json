@@ -2,8 +2,7 @@
 	"name": "steggy-theme",
 	"displayName": "Steggy Theme",
 	"description": "The Custom Steggy Editor",
-	"version": "0.0.1",
-	"enableProposedApi": true,
+	"version": "1.0.0",
 	"publisher": "profsucrose",
 	"engines": {
 		"vscode": "^1.44.0"
@@ -14,13 +13,17 @@
 	"activationEvents": [
 		"onCustomEditor:steggyTheme.editor"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/microsoft/vscode-extension-samples.git"
+	},
 	"main": "./out/extension.js",
 	"contributes": {
 		"iconThemes": [
 			{
-			  "id": "steggy",
-			  "label": "Steggy",
-			  "path": "./fileicons/steggy-icon-theme.json"
+				"id": "steggy",
+				"label": "Steggy",
+				"path": "./fileicons/steggy-icon-theme.json"
 			}
 		],
 		"customEditors": [
