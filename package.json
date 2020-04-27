@@ -1,0 +1,51 @@
+{
+	"name": "steggy-theme",
+	"displayName": "Steggy Theme",
+	"description": "The Custom Steggy Editor",
+	"version": "0.0.1",
+	"enableProposedApi": true,
+	"publisher": "profsucrose",
+	"engines": {
+		"vscode": "^1.44.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCustomEditor:steggyTheme.editor"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"iconThemes": [
+			{
+			  "id": "steggy",
+			  "label": "Steggy",
+			  "path": "./fileicons/steggy-icon-theme.json"
+			}
+		],
+		"customEditors": [
+			{
+				"viewType": "steggyTheme.editor",
+				"displayName": "Steggy Editor",
+				"selector": [
+					{
+						"filenamePattern": "*.stegg"
+					}
+				]
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "tslint -p ./",
+		"watch": "tsc -w -p ./"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@types/node": "^12.12.0",
+		"tslint": "^5.19.0",
+		"typescript": "^3.8.3",
+		"@types/vscode": "^1.44.0"
+	}
+}

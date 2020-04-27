@@ -1,0 +1,10 @@
+{
+	"iconDefinitions": {
+	  "_stegg": {
+		"iconPath": "./steggy.png"
+	  }
+	},
+	"fileExtensions": {
+		"stegg": "_stegg"
+	}
+}
